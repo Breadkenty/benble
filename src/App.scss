@@ -1,0 +1,71 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 231, 93);
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      text-transform: uppercase;
+    }
+
+    img {
+      width: 200px;
+    }
+  }
+
+  section {
+    .benji-face {
+      width: 500px;
+      height: 500px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: (all 0.15s ease-out 0s);
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .angry {
+      background-image: url("./assets/angry.png");
+    }
+    .ugly {
+      background-image: url("./assets/ugly.png");
+    }
+    .wink {
+      background-image: url("./assets/wink.png");
+    }
+
+    .like-dislike-button {
+      display: flex;
+      justify-content: center;
+      i {
+        font-size: 2.5rem;
+        margin: 24px;
+        transition: (all 0.15s ease-out 0s);
+      }
+
+      #like {
+        color: rgb(56, 236, 95);
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+      #dislike {
+        color: rgb(236, 35, 35);
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+}
